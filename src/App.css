@@ -1,38 +1,171 @@
-.App {
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f5;
+}
+.page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+.auth-card{
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width:300px;
+}
+
+.auth-card h1{
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.input-field{
+  width: 100%;
+  padding:10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size:14px;
+  box-sizing: border-box;
+}
+.btn-primary {
+  width: 100%;
+  padding: 10px;
+  background-color: #2f6f5e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.btn-primary:hover {
+  background-color: #234f42;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #2f6f5e;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+}
+
+.error-text {
+  color: #c0392b;
+  font-size: 13px;
+}
+
+.switch-text {
+  font-size: 13px;
+  margin-top: 14px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dashboard {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.topbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.btn-secondary {
+  padding: 8px 14px;
+  background-color: white;
+  color: #2f6f5e;
+  border: 1px solid #2f6f5e;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-secondary:hover {
+  background-color: #e6f0ec;
+}
+
+.welcome-text {
+  color: #666;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+
+.data-table th,
+.data-table td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.data-table th {
+  background-color: #f7f8f6;
+  font-size: 13px;
+  color: #555;
+}
+.btn-edit,
+.btn-delete {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
   color: white;
+  cursor: pointer;
+  margin-right: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-edit {
+  background-color: #4a7fb5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-edit:hover {
+  background-color: #3a6592;
+}
+
+.btn-delete {
+  background-color: #a6402a;
+}
+
+.btn-delete:hover {
+  background-color: #8a3322;
+}
+
+.add-form {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+}
+
+.add-form h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.add-form .input-field {
+  width: auto;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.add-form .btn-primary {
+  width: auto;
+  padding: 10px 20px;
 }
